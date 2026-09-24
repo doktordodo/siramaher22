@@ -1,7 +1,7 @@
-  string brand[5] = {
+   string brand[5] = {
         "honda",
+        "bmq",
         "audi",
-        "bmw",
         "mercedes",
         "ford"
     };
@@ -17,12 +17,12 @@
     int prsa = 0;
 
     for (int i = 0; i < 5; i++) {
-        cout << brand[i] << " modeli: ";
+        cout << brand[i] << " model: ";
 
-        for (int j = 0; j < 3; j++) {
-            cout << model[prsa + j] << "; ";
+        for (int j = 0; j < 4; j++) {
+            cout << model[prsa + j] << ", ";
         }
 
-        prsa=prsa+3;
+        prsa=prsa+4;
         cout << endl;
     }
