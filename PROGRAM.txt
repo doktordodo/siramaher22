@@ -1,0 +1,35 @@
+#include <iostream>
+#include <cstdio>
+#include <cmath>
+using namespace std;
+
+
+    int main() {
+
+    const double PI = 3.14159265359;
+
+    double a, b;
+    cout << "Unesite duljinu katete a: ";
+      scanf("%lf", &a);
+
+    cout << "Unesite duljinu katete b: ";
+     scanf("%lf", &b);
+
+
+
+    auto c = sqrt(a * a + b * b);
+
+
+    double opseg = a + b + c;
+    double povrsina = (a * b) / 2.0;
+    double kut = atan(a / b) * 180.0 / PI;
+
+
+    cout << "Hipotenuza c = " << c << endl;
+    cout << "Opseg trokuta = " << opseg << endl;
+    cout << "Povrsina trokuta = " << povrsina << endl;
+    cout << "Kut nasuprot kateti a = " << kut << " stupnjeva" << endl;
+
+    return 0;
+}
+
