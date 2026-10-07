@@ -1,0 +1,17 @@
+int main()
+{
+    int a;
+    cout << "Unesite prvi broj a: ";
+      scanf("%i", &a);
+
+      if(a%2==0){
+        cout<< "paran je" <<a<<endl;
+
+      }
+      else{
+         cout<< "nije paran" <<a<<endl;
+      }
+
+      cout<<"kvadrat broja je"<<a*a<<endl;
+
+       cout<<"apsolutna vrijenodts je "<<abs(a)<<endl;
