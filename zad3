@@ -3,7 +3,7 @@
 #include <cmath> // Potrebno za ugrađenu funkciju sqrt()
 using namespace std;
 
-// Deklaracije funkcija
+
 double kvadrat(double broj);
 double udaljenost(double x1, double y1, double x2, double y2);
 void ispisiUdaljenost(double rezultat);
@@ -26,7 +26,7 @@ int main() {
     return 0;
 }
 
-// Definicije funkcija
+
 double kvadrat(double broj) {
     return broj * broj;
 }
