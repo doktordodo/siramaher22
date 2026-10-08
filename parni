@@ -1,17 +1,48 @@
-int main()
-{
+#include <iostream>
+#include <cstdio>
+#include <cmath> // Potrebno za ugrađenu funkciju abs()
+using namespace std;
+
+// Deklaracije funkcija
+bool jeParan(int broj);
+int apsolutnaVrijednost(int broj);
+int kvadrat(int broj);
+void ispisiAnalizu(int broj);
+
+int main() {
     int a;
-    cout << "Unesite prvi broj a: ";
-      scanf("%i", &a);
+    
+    // Petlja koja ponavlja unos ako je broj izvan raspona [-100, 100]
+    do {
+        cout << "Unesi cijeli broj (-100 do 100): ";
+        scanf("%i", &a);
+    } while (a < -100 || a > 100);
 
-      if(a%2==0){
-        cout<< "paran je" <<a<<endl;
+    // Jedini poziv iz main-a prema zahtjevu zadatka
+    ispisiAnalizu(a);
 
-      }
-      else{
-         cout<< "nije paran" <<a<<endl;
-      }
+    return 0;
+}
 
-      cout<<"kvadrat broja je"<<a*a<<endl;
+// Definicije funkcija
+bool jeParan(int broj) {
+    return broj % 2 == 0;
+}
 
-       cout<<"apsolutna vrijenodts je "<<abs(a)<<endl;
+int apsolutnaVrijednost(int broj) {
+    return abs(broj); // Ugrađena funkcija iz biblioteke <cmath>
+}
+
+int kvadrat(int broj) {
+    return broj * broj;
+}
+
+void ispisiAnalizu(int broj) {
+    if (jeParan(broj)) {
+        cout << "Broj je paran." << endl;
+    } else {
+        cout << "Broj je neparan." << endl;
+    }
+    cout << "Apsolutna vrijednost: " << apsolutnaVrijednost(broj) << endl;
+    cout << "Kvadrat broja: " << kvadrat(broj) << endl;
+}
