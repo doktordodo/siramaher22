@@ -1,0 +1,41 @@
+#include <iostream>
+#include <cstdio>
+#include <cmath> // Potrebno za ugrađenu funkciju sqrt()
+using namespace std;
+
+// Deklaracije funkcija
+double kvadrat(double broj);
+double udaljenost(double x1, double y1, double x2, double y2);
+void ispisiUdaljenost(double rezultat);
+
+int main() {
+    double x1, y1, x2, y2;
+    
+    cout << "Unesi koordinate prve tocke (x1 y1): ";
+    scanf("%lf %lf", &x1, &y1);
+    
+    cout << "Unesi koordinate druge tocke (x2 y2): ";
+    scanf("%lf %lf", &x2, &y2);
+    
+    // Izračun i spremanje u varijablu
+    double d = udaljenost(x1, y1, x2, y2);
+    
+    // Zaseban ispis preko funkcije
+    ispisiUdaljenost(d);
+
+    return 0;
+}
+
+// Definicije funkcija
+double kvadrat(double broj) {
+    return broj * broj;
+}
+
+double udaljenost(double x1, double y1, double x2, double y2) {
+    // Pozivamo našu funkciju kvadrat i ugrađeni korijen sqrt
+    return sqrt(kvadrat(x2 - x1) + kvadrat(y2 - y1));
+}
+
+void ispisiUdaljenost(double rezultat) {
+    cout << "Udaljenost izmedu tocaka: " << rezultat << endl;
+}
