@@ -1,9 +1,9 @@
 #include <iostream>
 #include <cstdio>
-#include <cmath> // Potrebno za ugrađenu funkciju abs()
+#include <cmath> 
 using namespace std;
 
-// Deklaracije funkcija
+
 bool jeParan(int broj);
 int apsolutnaVrijednost(int broj);
 int kvadrat(int broj);
@@ -12,7 +12,7 @@ void ispisiAnalizu(int broj);
 int main() {
     int a;
     
-    // Petlja koja ponavlja unos ako je broj izvan raspona [-100, 100]
+ 
     do {
         cout << "Unesi cijeli broj (-100 do 100): ";
         scanf("%i", &a);
