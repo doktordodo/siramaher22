@@ -24,7 +24,7 @@ int main() {
     return 0;
 }
 
-// Definicije funkcija
+
 bool jeParan(int broj) {
     return broj % 2 == 0;
 }
