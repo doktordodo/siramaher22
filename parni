@@ -18,7 +18,7 @@ int main() {
         scanf("%i", &a);
     } while (a < -100 || a > 100);
 
-    // Jedini poziv iz main-a prema zahtjevu zadatka
+    
     ispisiAnalizu(a);
 
     return 0;
