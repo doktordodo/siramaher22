@@ -30,7 +30,7 @@ bool jeParan(int broj) {
 }
 
 int apsolutnaVrijednost(int broj) {
-    return abs(broj); // Ugrađena funkcija iz biblioteke <cmath>
+    return abs(broj); 
 }
 
 int kvadrat(int broj) {
