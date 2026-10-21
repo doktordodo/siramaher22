@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdio>
-#include <cmath> // Potrebno za ugrađenu funkciju sqrt()
+#include <cmath> 
 using namespace std;
 
 
